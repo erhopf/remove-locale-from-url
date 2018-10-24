@@ -7,7 +7,7 @@
 # correct URL pattern. However, currently it doesn't discriminate between links
 # and URL patterns included in your code samples. For instance, if a Ruby
 # quickstart includes a samples response with URLs that include the country code
-# These will also be changedself.
+# these will also be changed.
 
 import sys, os, re
 
