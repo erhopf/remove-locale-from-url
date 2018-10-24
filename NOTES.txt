@@ -1,0 +1,6 @@
+## 2018-10-24
+
+**Known Issues**
+
+* This app will still ask you if you want to correct links even if no results are returned.
+* Lacks any significant error handling.
