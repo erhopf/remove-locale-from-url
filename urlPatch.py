@@ -11,7 +11,7 @@
 
 import sys, os, re
 
-def findBadUrl():
+def find_bad_url():
     regex = re.compile(r'http[s]?:\/\/docs.microsoft.com\/[A-Za-z]{2}-[A-Za-z]{2}\/', re.M)
     for filename in os.listdir(os.getcwd()):
         if filename.endswith('.md'):
@@ -23,7 +23,7 @@ def findBadUrl():
             print "Matches: \n", matches
             file.close()
 
-def findReplace():
+def find_replace():
     while True:
         try:
             selection = raw_input("\nWould you like to fix these links now? (y/n): ").lower()
@@ -47,7 +47,8 @@ def findReplace():
                 file.write(re.sub(r'http[s]?:\/\/docs.microsoft.com\/[A-Za-z]{2}-[A-Za-z]{2}\/', 'https://docs.microsoft.com/', text))
                 file.close()
         print "\n\nScript successfully run.\n\n"
-        findBadUrl()
+        
+        ()
     else:
         print "\n##############################################"
         print "Exiting the program. See ya later!"
@@ -55,5 +56,5 @@ def findReplace():
         exit()
 
 if __name__ == "__main__":
-    findBadUrl()
-    findReplace()
+    find_bad_url()
+    find_replace()
